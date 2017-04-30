@@ -1,0 +1,60 @@
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Login</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		 <link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.css">
+    	<link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap-theme.css"> 
+    	<script src="../vendor/bootstrap/js/modal.js"></script>
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="login">
+			<div class="login-screen">
+				<form class="form-signin">
+					<h2 class="form-signin-heading">Faça seu login</h2>
+					<div class="input-group" >
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" id="inputUser" class="form-control" placeholder="Username" aria-describedby="basic-addon1" required autofocus>    				
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+					</div>					
+					<button class="btn btn-lg btn-primary btn-block" type="submit">Confirmar</button>
+				</form>
+				<button type="button" class="btn btn-link" data-target="#myModal" data-toggle="modal">Esqueceu sua senha?</button>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div id="myModal" class="modal fade " role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content ">
+		      <div class="modal-header alert alert-warning">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Atenção</h4>
+		      </div>
+		      <div class="modal-body">
+		        	<div class="panel-body">
+						Se você continuar uma nova senha será enviada para o e-mail: 
+						<span class="label label-info">
+							saul@fatec.com.br
+						</span>
+						, caso esse não sejá seu e-mail entre em contato com Service Desk via telefone.
+					</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+		        <button class="btn btn-success">Enviar</button>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+	</body>
+</html>

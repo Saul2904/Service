@@ -1,0 +1,247 @@
+<div class="panel panel-default">
+	<div class="panel-heading"><h4><b>Chamado</b></h4></div>
+	<div class="panel-body">	
+		<div class="row">
+			<div class="input-group input-group-lg disabled" id="numchamado">					
+				<span class="input-group-addon">Nº:</span>
+				<input type="text" class="form-control" aria-describedby="sizing-addon1" value="12345678" disabled>
+			</div>									
+		</div>	
+		<div class="row">
+			<div class="input-group input-group-lg disabled" id="dtabre">
+				<span class="input-group-addon">Aberto:</span>
+				<input type="text" class="form-control" aria-describedby="sizing-addon1" value="13/03/2017 09:53:49" disabled>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-group input-group-lg disabled" id="stachamado">
+				<span class="input-group-addon">Status:</span>
+				<input type="text" class="form-control" aria-describedby="sizing-addon1" value="Em tratamento" disabled>
+			</div>
+		</div>		
+		<div class="row">
+			<div class="input-group input-group-lg" id="usuchamado" >
+				<span class="input-group-addon">Usuario:</span>
+				<input type="text" class="form-control" aria-describedby="sizing-addon1" value="SE_AMBROSIO">
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-group input-group-lg" id="anachamado">
+				<span class="input-group-addon">Analista:</span>
+				<input type="text" class="form-control" aria-describedby="sizing-addon1" value="NHA_SOUZA">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4><b>Categorização</b></h>
+	</div>
+	<div class="panel-body">
+		<div class="row">	
+			<div class="input-group input-group-lg" id="categoria">		
+				<span class="input-group-addon" id="sizing-addon1">Categoria:</span>
+				<select class="form-control" aria-describedby="sizing-addon1">
+					<option value="Hardware">Hardware</option>
+					<option value="Software" selected>Software</option>
+					<option value="Rede">Rede</option>
+				</select>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="input-group input-group-lg" id="subcategoria">
+				<span class="input-group-addon" id="sizing-addon1">Subcategoria:</span>
+				<select name="estados" id="estados" class="form-control" aria-describedby="sizing-addon1">
+					<option value="SO">Sistema operacional</option>
+					<option value="Portal">Portal</option>
+					<option value="Pacote Office" selected>Pacote Office</option>
+				</select>
+			</div>
+		</div>		
+		<div class="row">
+		<div class="input-group input-group-lg" id="produto">
+			<span class="input-group-addon" >Produto:</span>
+			<select name="estados" id="estados" class="form-control" aria-describedby="sizing-addon1">
+				<option value="">Windows</option>
+				<option value="" selected>Linux</option>
+				<option value="">Mac</option>
+				<option value="">Portal de usuários</option>
+				<option value="" selected>Microsoft Office</option>
+				<option value="">BR Office</option>
+			</select>
+		</div>	
+		</div>	
+		<div class="row">
+		<div class="input-group input-group-lg" id="problema">
+			<span class="input-group-addon" >Problema:</span>
+			<select name="estados" id="estados" class="form-control" aria-describedby="sizing-addon1" >
+				<option value="">Solicitando ativação</option>
+				<option value="" >Duvidas de uso</option>
+				<option value="">Nova licença</option>
+			</select>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+<div class="input-group input-group-lg" id="descricao">
+	<span class="input-group-addon" >Decrição:</span>
+	<textarea name="descricao" rows="10" class="col-xs-12">Meu pacote office está solicitando ativação, solicito que seja ativado o quanto antes.</textarea>
+</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading"><h4><b>Atualização</b></h4></div>
+		<div class="panel-body">
+			<div class="row">
+    		<div class="table-responsive" >
+            	<table class="table table-hover">
+               		<thead>
+                   		<tr>
+                   			<th>Analista</th>
+                       		<th>Tipo</th>                                    
+                       		<th>Data</th>
+                       		<th>Decrição</th>
+                   		</tr>
+               		</thead>
+               		<tbody>
+                        <tr>
+                           	<td>NHA_SOUZA</td>
+                            <td>Solicitação a coordenador</td>
+                            <td>13/03/2017 09:50:34</td>
+                            <td>Foi solicitado ao Pablo que autorize a compra da licença para o colaborador</td>
+                        </tr>
+                        <tr>
+                           <td>NHA_SOUZA</td>
+                           <td>Aguardando produto</td>
+                           <td>15/03/2017 11:22:12</td>
+                           <td>Compra realizada, aguardando disponibilidade da colaborador para a ativação</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+		</div>
+		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#ModalAtualizar">
+			<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+				Nova atualização
+		</button>
+</div>
+</div>  				
+
+<!--Inicio Modal-->
+<div id="ModalAtualizar" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Atualizar</h4>
+			</div>
+			<div class="modal-body">
+				<div class="panel-body">
+				<div class="row">
+					<div class="input-group input-group-lg" id="tipoatual">
+						<span class="input-group-addon">Tipo:</span>
+						<select name="" id="" class="form-control" aria-describedby="sizing-addon1">
+							<option value="Refazer sertificado">Comunicação com o cliente</option>
+							<option value="Hard reset">Encaminhar a terceiro</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-group input-group-lg" id="descatualiza">
+						<span class="input-group-addon" >Descrição:</span>
+						<textarea name="descricao" class="col-xs-12" rows="10"></textarea>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="btn-group btn-group" role="group" aria-label="..." id="menuchamado">
+			    	<button type="button" class="btn btn-default" data-dismiss="modal"> 
+			       		<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+			       		Atualizar
+			       	</button>
+			        <button type="button" class="btn btn-default" data-dismiss="modal">
+				        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				        Cancelar
+				    </button>	
+			    </div>
+		    </div>
+		</div>	
+	</div>
+</div>	
+		<div id="ModalFechar" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Fechamento</h4>
+		      </div>
+		      <div class="modal-body">
+		          <div class="panel-body">
+		          	<div class="row">
+		  		  		<div class="input-group input-group-lg" id="dtfecha">
+							<span class="input-group-addon">Data fechamento:</span>
+							<input type="text" class="form-control" aria-describedby="sizing-addon1" value="15/03/2017 11:22" disabled>									
+						</div>	
+					</div>
+
+					<div class="row">
+						<div class="input-group input-group-lg" id="codfecha">
+							<span class="input-group-addon">Código fechamento:</span>
+							<select name="" id="" class="form-control" aria-describedby="sizing-addon1">
+								<option value="Refazer sertificado">Licença ativada</option>
+								<option value="Hard reset" selected>Licença recusada</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-group input-group-lg" id="solucao">
+							<span class="input-group-addon" >Solução:</span>
+							<textarea name="descricao" class="col-xs-12" rows="10">A licença foi adquirida, foi colocado o IP liberado na máquina do colaborador e o office do colaborador foi ativado.</textarea>
+						</div>
+		  			</div>
+		  		</div>
+		      </div>		      
+		      <div class="modal-footer">
+		       <div class="btn-group btn-group" role="group" aria-label="..." id="menuchamado">
+		       		<button type="button" class="btn btn-default" data-dismiss="modal"> 
+		       			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+		       			Fechar chamado
+		       		</button>
+		      		<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="tooltip" data-placement="top" title="Se você confirmar o fechamento não será possivel reabrir o chamado">
+		      			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+		      			Confirmar fechamento
+		      		</button>
+		      		<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="tooltip" data-placement="top" title="Clique nesse botão para reabir o chamado caso o mesmo não tenha sido resolvido">
+			      		<span class="glyphicon glyphicon-retweet" aria-hidden="true"></span>
+			      		Reabrir
+		      		</button>
+		        	<button type="button" class="btn btn-default" data-dismiss="modal">
+			        	<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+			        	Cancelar
+			        </button>	
+				</div>
+		      </div>		      
+		    </div>
+		  </div>
+		</div>	
+		<!--Fim Modal-->
+
+		<div class="btn-group btn-group" role="group" aria-label="..." id="menuchamado">
+			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#ModalFechar">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					Fechar/Confirmar
+			</button>
+			<button type="button" class="btn btn-default">
+				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+				Novo
+			</button>
+			<button type="button" class="btn btn-default">
+				<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
+				Salvar
+			</button>
+			<a href="index.html" type="button" class="btn btn-default">			
+				<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				Cancelar
+			</a>
+		</div>
