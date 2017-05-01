@@ -64,6 +64,11 @@ angular.module('contatooh', ['ngRoute', 'ngResource'])
            // controller: 'ContatoController'
         });
 
+        $routeProvider.when('/fornecedor', {
+            templateUrl: 'partials/fornecedor.html',
+           // controller: 'ContatoController'
+        });
+
         $routeProvider.otherwise({redirectTo: '/home'});
 
     });
