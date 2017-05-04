@@ -1,5 +1,5 @@
 {
-  "name": "ServiceDesk",
+  "name": "service",
   "version": "1.0.0",
   "description": "Service Desk",
   "main": "server.js",

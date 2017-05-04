@@ -15,7 +15,6 @@ module.exports = function () {
    app.use(bodyParser.json());
    app.use(require('method-override')());
 
-   //home(app);
    load('controllers', {cwd: 'app'})
       .then('routes')
       .into(app);

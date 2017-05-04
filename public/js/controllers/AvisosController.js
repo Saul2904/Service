@@ -1,18 +1,18 @@
-angular.module('contatooh').controller('ContatosController',
-   function($scope, /*$http*/ $resource) {
+angular.module('Service').controller('AvisosController',
+   function($scope, $resource, Aviso) {
 
-      $scope.mensagem = {};
-     
-
-      var Noticias = $resource('noticias/:id');
-
-      buscaContatos = function(){
-         Contato.query(
-         function(noticias){
-            $scope.noticias = noticias;
+      $scope.mensagem = {};     
+    
+      buscaAvisos = function(){
+         Aviso.query(
+             function(avisos){
+                 console.log(avisos);
+            $scope.avisos = avisos;
             //$scope.mensagem = {};//
+            
          },
          function(erro){
+             console.log(erro)
             $scope.mensagem = {
                class: 'danger',
                texto:'Não foi possivel obter alista de contatos'
@@ -21,12 +21,12 @@ angular.module('contatooh').controller('ContatosController',
       );
       }   
 
-      buscaContatos();
+      buscaAvisos();
 
-      $scope.remove = function(noticias){
-         Contato.delete({id : contato._id},
+      $scope.remove = function(avisos){
+         Contato.delete({id : aviso._id},
             function(){               
-               buscaContatos();
+               buscaAvisos();
                $scope.mensagem = {
                   class: "info",
                   texto: "Contato excluido com sucesso"

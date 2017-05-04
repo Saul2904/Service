@@ -1,9 +1,9 @@
-angular.module('contatooh', ['ngRoute', 'ngResource'])
+angular.module('Service', ['ngRoute', 'ngResource'])
     .config(function ($routeProvider) {
 
         $routeProvider.when('/home', {
             templateUrl: 'partials/home.html',
-            //controller: 'ContatoController'
+            controller: 'AvisosController'
         });
 
         $routeProvider.when('/chamado', {
@@ -71,7 +71,7 @@ angular.module('contatooh', ['ngRoute', 'ngResource'])
 
         $routeProvider.when('/avisos', {
             templateUrl: 'partials/avisos.html',
-           // controller: 'ContatoController'
+            controller: 'AvisosController'
         });
 
         $routeProvider.when('/aviso', {

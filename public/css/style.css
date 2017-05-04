@@ -7,13 +7,6 @@
   }  
 }
 
-@media only screen and (min-width: 500px) {
-  #collapse1, #collapse2, #collapse3{
-    visibility: block;
-    display: inline-block;
-  }   
-}
-
 a:link, a:visited {
 	text-decoration: none;
 }

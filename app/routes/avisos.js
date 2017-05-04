@@ -1,6 +1,6 @@
 module.exports = function(application) {
-	
-	application.get('/#!/avisos', function(req, res){
+	application.get('/avisos', function(req, res){
+		console.log("chegou na rota");
 		application.app.controllers.avisos.avisos(application, req, res);		
 	});
 

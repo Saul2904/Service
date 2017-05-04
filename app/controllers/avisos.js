@@ -1,9 +1,11 @@
-module.exports.avisos = function(application, req, res){
-   var connection = application.config.dbConnection();
-   var avisosModel = new application.app.models.AvisosDAO(connection);
+module.exports.avisos = function(app, req, res){
+   var connection = app.config.dbConnection();
+   var avisosModel = new app.app.models.AvisosDAO(connection);
 
    avisosModel.getAvisos(function(error, result){
-      res.render("index", {avisos : result});
+      console.log("chegou no controller");
+      res.json(result);
+      console.log(result);
    });   
 }
 
