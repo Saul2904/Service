@@ -1,25 +1,23 @@
-module.exports.noticias = function(application, req, res){
+module.exports.avisos = function(application, req, res){
    var connection = application.config.dbConnection();
-   var noticiasModel = new application.app.models.NoticiasDAO(connection);
+   var avisosModel = new application.app.models.AvisosDAO(connection);
 
-   noticiasModel.getNoticias(function(error, result){
-      res.render("index", {noticias : result});
+   avisosModel.getAvisos(function(error, result){
+      res.render("index", {avisos : result});
    });   
 }
 
-module.exports.noticia = function(application, req, res){
+module.exports.aviso = function(application, req, res){
    var connection = application.config.dbConnection();
-   var noticiasModel = new application.app.models.NoticiasDAO(connection);
+   var avisosModel = new application.app.models.AvisosDAO(connection);
 
-   var id_noticia = req.query;
+   var id_aviso = req.query;
 
    var controller = {};
    
-      controller.listaContatos = function(req, res) {
-      res.json(noticias);
-   };
-
- 
+      controller.listaAvisos = function(req, res) {
+      res.json(avisos);
+   }; 
 }
 
 /*module.exports = function() {

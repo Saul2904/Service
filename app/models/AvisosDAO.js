@@ -14,29 +14,29 @@ console.log("achou o model");
 	return this;
 }
 
-function NoticiasDAO(connection){
+function AvisosDAO(connection){
 	this._connection = connection;
 	
 }
 
-NoticiasDAO.prototype.getNoticias = function(callback){
-	this._connection.query('select * from TBavisos order', callback);
-console.log('conecta');
+AvisosDAO.prototype.getAvisos = function(callback){
+	this._connection.query('select * from TBavisos', callback);
+	console.log('entrou no get avisos');
 }
 
-NoticiasDAO.prototype.getNoticia = function(id_noticia, callback){
-	console.log(id_noticia.id_noticia);
-	this._connection.query('select * from TBavisos where codAvisos = ' + id_noticia.id_noticia, callback);
+AvisosDAO.prototype.getAviso = function(id_aviso, callback){
+	console.log(id_noticia.id_aviso);
+	this._connection.query('select * from TBavisos where codAvisos = ' + id_aviso.id_aviso, callback);
 }
 
-NoticiasDAO.prototype.salvarNoticia = function(noticia, callback){
+AvisosDAO.prototype.salvarAvisos = function(noticia, callback){
 	this._connection.query('insert into TBavisos set ? ', noticia, callback)
 }
 
-NoticiasDAO.prototype.get5UltimasNoticias = function(callback){
+AvisosDAO.prototype.get5UltimasAvisos = function(callback){
 	this._connection.query('select * from TBavisos limit 5', callback);
 }
 
 module.exports = function(){
-	return NoticiasDAO;
+	return AvisosDAO;
 }

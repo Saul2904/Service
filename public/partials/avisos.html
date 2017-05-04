@@ -1,57 +1,43 @@
-<div class="row">
-    <div class="col-xs-12 col-sm-12 col-md12">
-      <div class="panel-group" id="accordion">
-        <div class="panel panel-default"> 
-            <nav class="navbar navbar-default">
-                <div class="navbar-header ">                
-                    <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#caixaNavbar">
-                        <span class="glyphicon glyphicon-th-large"></span>                       
-                    </button>
-                    <span class="navbar-brand"><h4><b>Avisos</b></h4></span>
-                </div>
-                <div class="collapse navbar-collapse" id="caixaNavbar">
-                    <div class="navbar-form navbar-right">
-                        <div class="input-group input-group" id="usuchamado" >
-                            <span class="input-group-addon">Status:</span>
-                            <select class="form-control" id="sel1">
-                                <option>Ativo</option>
-                                <option>Inativo</option>
-                                <option>Todos</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-	        </nav>
-
-          <div class="panel panel-default">
-            <div class="panel-heading">          
+<div class="panel panel-default">
+  <div class="panel-heading">    
+    <form class="form-inline">
+      <label><h4><b>Avisos</b></h4></label>
+      <div class="navbar-right">
+        <label class="mr-sm-2" for="inlineFormCustomSelect">Status:</label>
+        <select class="btn btn-default dropdown-toggle">
+          <option>Ativo</option>
+          <option>Inativo</option>
+          <option>Todos</option>
+        </select>
+      </div>
+    </form>    
+  </div>
+  <div class="panel-body">
+    <div class="panel panel-default">
+        <div class="panel-heading">      
               <div class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" data-target="#av1" class="list-group-item-heading" role="button">
                   <span class="glyphicon glyphicon-chevron-down"></span>
-                  Problema no sistema de cadastro
+                  Problemas no sistema de cadastro
                 </a>
-              </div>
+              </div>              
             </div>  
             <div id="av1" class="panel-collapse collapse">
-            <nav class="navbar navbar-default col-sm-12 col-xs-12">
-            <div class="navbar-form navbar-left">
+              <div class="form-inline" >                   
+                    <div class="checkbox navbar-right">
+                    <label><input type="checkbox"> Ativo</label>
+                </div>
                 <button type="button" class="btn btn-default">
                     <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                     Editar
-                </button>
-            </div>
-              <div class="navbar-form navbar-right">
-                <div class="checkbox">
-                    <label><input type="checkbox"> Ativo</label>
-                </div>
-              </div>
-	        </nav>
+                </button>  
+	            </div>
               <p class="panel-body">
                 Estamos com um problema no sistema de cadastro de mercadorias, pedimos que aguardem até que o problema seja resolvido.
               </p>
             </div>
-          </div>    
-          <div class="panel panel-default">
+          </div> 
+                    <div class="panel panel-default">
             <div class="panel-heading">          
               <div class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" data-target="#av2" class="list-group-item-heading" role="button">
@@ -61,25 +47,21 @@
               </div>
             </div>
             <div id="av2" class="panel-collapse collapse">
-            <nav class="navbar navbar-default col-sm-12 col-xs-12">
-            <div class="navbar-form navbar-left">
+              <div class="form-inline" >                   
+                    <div class="checkbox navbar-right">
+                    <label><input type="checkbox"> Ativo</label>
+                </div>
                 <button type="button" class="btn btn-default">
                     <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                     Editar
-                </button>
-            </div>
-              <div class="navbar-form navbar-right">
-                <div class="checkbox">
-                    <label><input type="checkbox"> Ativo</label>
-                </div>
-              </div>
-	        </nav>
+                </button>  
+	            </div>
             <p class="panel-body">
             Não deixe de nos informar como foi o atendimento recebido do setor de Service Desk.
             </p>
             </div>
           </div>
-          <div class="panel panel-default">
+            <div class="panel panel-default">
             <div class="panel-heading">          
               <div class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" data-target="#av3" class="list-group-item-heading" role="button">
@@ -89,28 +71,24 @@
               </div>
             </div>  
             <div id="av3" class="panel-collapse collapse">
-            <nav class="navbar navbar-default col-sm-12 col-xs-12">
-            <div class="navbar-form navbar-left">
+              <div class="form-inline" >                   
+                    <div class="checkbox navbar-right">
+                    <label><input type="checkbox"> Ativo</label>
+                </div>
                 <button type="button" class="btn btn-default">
                     <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                     Editar
-                </button>
-            </div>
-              <div class="navbar-form navbar-right">
-                <div class="checkbox">
-                    <label><input type="checkbox"> Ativo</label>
-                </div>
-              </div>
-	        </nav>
+                </button>  
+	            </div>
+
               <p class="panel-body">
                 O problema no sistema d ponto já foi resolvido e o mesmo já foi liberado para uso.
               </p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+  </div>
 </div>
+
 <div class="btn-group btn-group" role="group" aria-label="..." id="menuchamado">
 	<a class="btn btn-default" href="#!/aviso">
 		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>

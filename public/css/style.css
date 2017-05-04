@@ -13,8 +13,24 @@
     display: inline-block;
   }   
 }
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none
+	}
+
 .row{
-  margin-top: 5px;
+  margin-top: 4px;
+}
+
+#barra-avisos{
+  position: absolute;
+  float: right;
+  text-align: right;
+  color: #a3d063;
 }
 
 /* LOGIN */
